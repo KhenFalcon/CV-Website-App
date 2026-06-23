@@ -1,0 +1,16 @@
+.content {
+
+    position: relative;
+    top: 75px;
+
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.content .content-section {
+    background-color: rgba(0, 0, 0, 0.50);
+
+    margin-top: 15px;
+    border-radius: 5%;
+    padding: 20px;
+}

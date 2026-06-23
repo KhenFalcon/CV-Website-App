@@ -1,0 +1,34 @@
+.header {
+    background-color: rgba(0, 0, 0, 0.50);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 20px 0 20px;
+    
+    height: 75px;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.header span {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    height: 75%;
+    width: 95%;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+}
+
+.header span:hover {
+    background-color: black;
+    opacity: 0.75;
+    border-radius: 5px;
+}

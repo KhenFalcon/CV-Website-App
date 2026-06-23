@@ -1,0 +1,8 @@
+/* css code for a verticle line. Consider it an independent component (similar to hr) */
+/* used in the header component */
+
+.vr {
+    width: 5px;
+    height: 75%;
+    background-color: white;
+}
