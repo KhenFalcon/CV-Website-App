@@ -10,7 +10,6 @@ function Header() {
                 <span onClick={scrollToBio}>
                     Joshua Mark
                 </span>
-                <div className="vr" />
                 <span onClick={scrollToBio}>
                     About Me
                 </span>
@@ -19,8 +18,13 @@ function Header() {
                     Education
                 </span>
                 <div className="vr" />
-                <span onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                <span onClick={scrollToExperience}>
                     Experience
+                </span>
+                <div className="vr" />
+                
+                <span onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                    Projects
                 </span>
                 <div className="vr" />
                 <span onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
@@ -43,6 +47,13 @@ function scrollToEducation() {
     const educationSection = document.getElementsByClassName("education")[0];
     if (educationSection) {
         educationSection.scrollIntoView({ behavior: "smooth" });
+    }
+}
+
+function scrollToExperience() {
+    const experienceSection = document.getElementsByClassName("experience")[0];
+    if (experienceSection) {
+        experienceSection.scrollIntoView({ behavior: "smooth" });
     }
 }
 

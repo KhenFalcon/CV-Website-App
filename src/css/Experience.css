@@ -1,0 +1,19 @@
+.experience-content {
+    display: flex;
+    
+    margin-top: 20px;
+
+    align-items: left;
+    text-align: left;
+    gap: 20px;
+    
+
+    img {
+        max-width: 15%;
+        height: auto;
+
+        object-fit: contain;
+
+        border-radius: 10px;
+    }
+}
