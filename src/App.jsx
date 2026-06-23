@@ -16,8 +16,8 @@ function App() {
   return (
     <>
       <Background />
-      <Header />
       <Content />
+      <Header />
     </>
   )
 }

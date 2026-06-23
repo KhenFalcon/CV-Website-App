@@ -7,10 +7,37 @@
     margin-right: 25px;
 }
 
-.content .content-section {
-    background-color: rgba(0, 0, 0, 0.50);
+/* Content Section Styling */
+.content {
+    .content-section {
+        background-color: rgba(0, 0, 0, 0.50);
 
-    margin-top: 15px;
-    border-radius: 5%;
-    padding: 20px;
+        margin-top: 15px;
+        border-radius: 5%;
+        padding: 20px;
+    }
+
+    hr {
+        border: 1px solid grey;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        text-align: left;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+        
+        background-color: rgba(0, 0, 0, 0.50);
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    a:hover {
+        background-color: rgba(0, 0, 0, 0.75);
+        color: white;
+    }
 }
