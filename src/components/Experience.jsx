@@ -5,6 +5,7 @@ import "../css/Content.css";
 // images
 import RMS from "../assets/work-logos/RMS logo.png";
 import RedLobster from "../assets/work-logos/Red Lobster logo.png";
+import Locos from "../assets/work-logos/Locos logo.jpg";
 
 function Experience() {
     return (
@@ -34,7 +35,7 @@ function Experience() {
                     <ul>
                         <li>1956 W Broad St, Athens, GA 30606</li>
                         <li><b>Host</b></li>
-                        <li>August 2023 - December 2024</li>
+                        <li>August 2023 - May 2024</li>
                     </ul>
                     <p>
                         Greeted customers, managed reservations, and facilitated early
@@ -42,6 +43,27 @@ function Experience() {
                     </p>
                 </div>
             </div>
+            <br />
+            <div className="experience-content">
+                <img src={Locos} alt="Locos Logo" />
+                <div className="experience-text">
+                    <h2>Locos</h2>
+                    <ul>
+                        <li>2020 Timothy Rd, Athens, GA 30606</li>
+                        <li><b>Host</b></li>
+                        <li>June 2024 - December 2025</li>
+                    </ul>
+                    <p>
+                        Greeted customers, managed reservations, and facilitated early
+                        communication with guests and their servers.
+                    </p>
+                </div>
+            </div>
+            <br />
+            <p><i>
+                -- I do not own any of these logos. Credit and Rights are
+                reserved for their respective owners. --
+            </i></p>
         </div>
     )
 }
