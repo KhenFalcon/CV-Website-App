@@ -37,7 +37,10 @@ function Education() {
                         onClick={() => window.open('https://www.uga.edu/', 
                             '_blank', 'noopener,noreferrer') } />
                     <h2>University of Georgia</h2>
-                    <p>Bachelors of Science in Computer Science</p>
+                    <p>
+                        Bachelors of Science in Computer Science & Certificate
+                        in Applied Data Science
+                    </p>
                     <p>GPA: 3.8</p>
                     <p>Graduated: 2023-2026</p>
                 </div>
