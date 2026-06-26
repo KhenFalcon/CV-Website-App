@@ -11,8 +11,8 @@ function Header() {
                     Joshua Mark
                 </span>
                 <div className="vr" />
-                <span onClick={scrollToBio}>
-                    About Me
+                <span onClick={scrollToSkills}>
+                    Skills
                 </span>
                 <div className="vr" />
                 <span onClick={scrollToEducation}>
@@ -28,19 +28,24 @@ function Header() {
                     Projects
                 </span>
                 <div className="vr" />
-                <span onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-                    Contact Me
-                </span>
-                <div className="vr" />
             </div>
         </>
     )
 }
 
+// TODO: condense the following methods into one?
+
 function scrollToBio() {
     const bioSection = document.getElementsByClassName("about-me")[0];
     if (bioSection) {
         bioSection.scrollIntoView({ behavior: "smooth" });
+    }
+}
+
+function scrollToSkills() {
+    const skillsSection = document.getElementsByClassName("skills")[0];
+    if (skillsSection) {
+        skillsSection.scrollIntoView({ behavior: "smooth" });
     }
 }
 

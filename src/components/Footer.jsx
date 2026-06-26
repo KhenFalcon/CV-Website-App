@@ -5,10 +5,10 @@ import "../css/Footer.css";
 function Footer() {
     return (
         <div className="footer">
-            <div id="grid">
+            <div className="footer-grid">
                 <p grid-column="1" grid-row="1">Phone Number:</p>
                 <p grid-column="1" grid-row="2">Email:</p>
-                <p grid-column="1" grid-row="3">Github:</p>
+                <p grid-column="1" grid-row="3">GitHub:</p>
 
                 <p grid-column="2" grid-row="1">(+1) (706) 254-6756</p>
                 <a grid-column="2" grid-row="2"
