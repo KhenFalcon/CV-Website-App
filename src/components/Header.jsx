@@ -10,6 +10,7 @@ function Header() {
                 <span onClick={scrollToBio}>
                     Joshua Mark
                 </span>
+                <div className="vr" />
                 <span onClick={scrollToBio}>
                     About Me
                 </span>
