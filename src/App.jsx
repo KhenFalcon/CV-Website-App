@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Background from './components/Background.jsx'
 import Header from './components/Header.jsx'
 import Content from './components/Content.jsx'
+import Footer from './components/Footer.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,6 +12,7 @@ function App() {
     <>
       <Background />
       <Content />
+      <Footer />
       <Header />
     </>
   )

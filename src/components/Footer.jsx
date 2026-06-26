@@ -36,7 +36,7 @@ function Footer() {
                 their respective owners. Likewise, all Credit and Rights are
                 reserved for said respective owners.
             </p>
-            <p fontSize="18px">© 2026 Joshua Mark</p>
+            <p fontSize="18px">~ 2026 Joshua Mark ~</p>
         </div>
     )
 }

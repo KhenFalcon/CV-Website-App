@@ -3,6 +3,7 @@ import react from "react";
 import AboutMe from "./AboutMe";
 import Education from "./Education";
 import Experience from "./Experience";
+import Footer from "./Footer";
 // css
 import "../css/Content.css";
 

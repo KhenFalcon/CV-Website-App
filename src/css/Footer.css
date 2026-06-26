@@ -1,7 +1,11 @@
 .footer {
+    position: relative; /* ensures it comes after content */
+    top: 100px; /* to accomodate content's shift (for the header) + margin */
+
     padding-left: 25px;
     padding-right: 25px;
-    
+
+    background-color: #16171d;
     font-size: 12px;
 }
 

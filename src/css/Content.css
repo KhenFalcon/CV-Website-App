@@ -1,10 +1,10 @@
 .content {
 
     position: relative;
-    top: 75px;
+    top: 75px; /* to leave room for the header */
 
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 /* Content Section Styling */
