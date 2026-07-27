@@ -1,8 +1,8 @@
 # CV Website
 - Created by: Joshua Mark (KhenFalcon)
 - Creation Date: June 10, 2026
-- Last Updated:  June 26, 2026
-- Current Version: 0.1.0
+- Last Updated:  July 27, 2026
+- Current Version: 0.5.0
 
 This web-app is a CV for Joshua Mark. That is literally all it is.
 
