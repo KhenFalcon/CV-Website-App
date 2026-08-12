@@ -67,6 +67,11 @@ body {
   box-sizing: border-box;
 }
 
+/* Container that holds background and content so background can be clipped before footer */
+.main-container {
+  position: relative;
+}
+
 h1,
 h2 {
   font-family: var(--heading);

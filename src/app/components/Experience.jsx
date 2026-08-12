@@ -13,7 +13,7 @@ function Experience() {
             <h1>Experience</h1>
             <hr />
             <div className="experience-content">
-                <img src={RMS} alt="Revenue Management Services Logo" />
+                <img src={RMS?.src || RMS} alt="Revenue Management Services Logo" />
                 <div className="experience-text">
                     <h2>Revenue Management Services</h2>
                     <ul>
@@ -29,7 +29,7 @@ function Experience() {
             </div>
             <br />
             <div className="experience-content">
-                <img src={RedLobster} alt="Red Lobster Logo" />
+                <img src={RedLobster?.src || RedLobster} alt="Red Lobster Logo" />
                 <div className="experience-text">
                     <h2>Red Lobster</h2>
                     <ul>
@@ -45,7 +45,7 @@ function Experience() {
             </div>
             <br />
             <div className="experience-content">
-                <img src={Locos} alt="Locos Logo" />
+                <img src={Locos?.src || Locos} alt="Locos Logo" />
                 <div className="experience-text">
                     <h2>Locos</h2>
                     <ul>

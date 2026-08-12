@@ -1,9 +1,9 @@
 import react from "react";
 // components
-import AboutMe from "./AboutMe.jsx";
-import Skills from "./Skills.jsx";
-import Education from "./Education.jsx";
-import Experience from "./Experience.jsx";
+import AboutMe from "./AboutMe";
+import Skills from "./Skills";
+import Education from "./Education";
+import Experience from "./Experience";
 // css
 import "../css/Content.css";
 

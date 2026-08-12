@@ -1,3 +1,5 @@
+"use client";
+
 import react from "react";
 // css
 import "../css/Education.css";
@@ -15,7 +17,7 @@ function Education() {
             <hr />
             <div className="education-grid">
                 <div className="education-item" grid-column="1">
-                    <img src={NOHS} alt="North Oconee Highschool Logo"
+                    <img src={NOHS?.src || NOHS} alt="North Oconee Highschool Logo"
                         onClick={() => window.open('https://nohs.oconeeschools.org/', 
                             '_blank', 'noopener,noreferrer') } />
                     <h2>North Oconee Highschool</h2>
@@ -24,7 +26,7 @@ function Education() {
                     <p>Graduated: May 2022</p>
                 </div>
                 <div className="education-item" grid-column="2">
-                    <img src={UNG} alt="University of North Georgia Logo"
+                    <img src={UNG?.src || UNG} alt="University of North Georgia Logo"
                         onClick={() => window.open('https://www.ung.edu/', 
                             '_blank', 'noopener,noreferrer') } />
                     <h2>University of North Georgia</h2>
@@ -33,7 +35,7 @@ function Education() {
                     <p>Transferred: 2022-2023</p>
                 </div>
                 <div className="education-item" grid-column="3">
-                    <img src={UGA} alt="University of Georgia Logo"
+                    <img src={UGA?.src || UGA} alt="University of Georgia Logo"
                         onClick={() => window.open('https://www.uga.edu/', 
                             '_blank', 'noopener,noreferrer') } />
                     <h2>University of Georgia</h2>
@@ -45,7 +47,7 @@ function Education() {
                     <p>Graduated: 2023-2026</p>
                 </div>
                 <div className="education-item" grid-column="4">
-                    <img src={KYU} alt="Kyushu University Logo"
+                    <img src={KYU?.src || KYU} alt="Kyushu University Logo"
                         onClick={() => window.open('https://www.kyushu-u.ac.jp/', 
                             '_blank', 'noopener,noreferrer') } />
                     <h2>Kyushu University</h2>

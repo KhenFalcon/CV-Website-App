@@ -1,22 +1,22 @@
 import react from "react";
-//css
+// css
 import "../css/AboutMe.css";
 import "../css/Content.css";
-//images
+// images
 import headshot from "../assets/headshot.jpg";
 
 function AboutMe() {
     return (
         <div className="about-me content-section">
-            <img id="headshot" src={headshot} alt="Headshot" />
+            <img id="headshot" src={headshot?.src || headshot} alt="Headshot" />
             <div id="bio">
                 <h1>Joshua Mark</h1>
                 <p>
-                    I am a graduating student from the
+                    I am a student from
                     <a href="https://www.uga.edu/" target="_blank" rel="noopener noreferrer">
-                        <i>University of Georgia</i>
+                        <i>The University of Georgia</i>
                     </a>
-                    in Fall 2026 with a Bachelor's Degree of Computer Science
+                    Graduating this December with a Bachelor's Degree of Computer Science
                     and a Certificate of Applied Data Science.
                 </p>
                 <br />

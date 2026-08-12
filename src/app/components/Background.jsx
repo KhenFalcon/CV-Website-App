@@ -10,10 +10,10 @@ import castleImage from "../assets/background-images/castle.jpg";
 function Background() {
     return (
         <div className="background">
-            <img src={shipImage} alt="Background" width="100%" />
-            <img src={pondImage} alt="Background" width="100%" />
-            <img src={shrineImage} alt="Background" width="100%" />
-            <img src={castleImage} alt="Background" width="100%" />
+            <img src={shipImage?.src || shipImage} alt="Background" />
+            <img src={pondImage?.src || pondImage} alt="Background" />
+            <img src={shrineImage?.src || shrineImage} alt="Background" />
+            <img src={castleImage?.src || castleImage} alt="Background" />
         </div>
     )
 }
