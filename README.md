@@ -2,9 +2,18 @@
 - Created by: Joshua Mark (KhenFalcon)
 - Creation Date: June 10, 2026
 - Last Updated: August 11, 2026
-- Current Version: 0.5.1
+- Current Version: 1.0.0
 
 This web-app is a CV for Joshua Mark. That is literally all it is.
+
+## Version Details
+- Complete basic information with most CV details.
+- Working header with scroll-to-section functionallity.
+
+### Planned Additions
+- Finish full CV details and information.
+- Add a new "Projects" section. 
+- Tweak Background to neatly meet the background.
 
 ## Running Locally:
 - Clone this repository

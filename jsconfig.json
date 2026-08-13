@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": "."
+    "baseUrl": "." // depreciated (im ignoring this)
   },
   "include": ["src/**/*", "**/*.js", "**/*.jsx"],
   "exclude": ["node_modules"]
