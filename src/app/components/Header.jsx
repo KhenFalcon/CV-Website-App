@@ -26,7 +26,9 @@ function Header() {
                 </span>
                 <div className="vr" />
                 
-                <span onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                <span onClick={() => alert("Sorry for the inconvenience! This section is currently " +
+                    "under development. In the meantime, please ask me directly about my past " +
+                    "projects or look at some of the projects on my Github! (https://github.com/KhenFalcon)")}>
                     Projects
                 </span>
                 <div className="vr" />
