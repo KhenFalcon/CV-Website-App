@@ -1,3 +1,28 @@
 {
-    "name":"ジョシューワ・マーク"
+    "name":"ジョシューワ・マーク",
+    "bio": [
+        "I am a student from The University of Georgia Graduating this December with a Bachelor's Degree of Computer Science and a Certificate of Applied Data Science.",
+        "I studied abroad in Japan at Kyushu University (2024-2025), and I have gained basic language proficiency in Japanese (N3), as well as a passion for Japanese culture."
+    ],
+    "inline-links": [
+        {
+            "text": "ジョージア大学", 
+            "link": "https://www.uga.edu/"
+        },
+        {
+            "text": "九州大学",
+            "link": "https://www.kyushu-u.ac.jp/"
+        }
+    ],
+    "contacts": [
+        {
+            "ave": "Mobile",
+            "ave-type": "Phone Number",
+            "text": "(+1) (706) 254-6756"
+        },
+        {
+            "ave": "Personal Email",
+            "ave-type": "Email Address",
+            "text": "chiquen415@gmail.com"
+        }
 }
