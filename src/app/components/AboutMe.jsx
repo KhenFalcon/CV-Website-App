@@ -11,23 +11,25 @@ import headshot from "../assets/headshot.jpg";
 
 function AboutMe() {
     let loc = useLocalization().localization == 'English' ? en_local : jp_local;
-    let [name] = [loc.name];
+    let [name, bio] = [loc.name, loc.bio];
 
     return (
         <div className="about-me content-section">
             <img id="headshot" src={headshot?.src || headshot} alt="Headshot" />
             <div id="bio">
-                <h1>{ name }</h1>
-                <p>
+                <h1>{name}</h1>
+                <p> {bio[0]} </p>
+                {/* <p>
                     I am a student from
                     <a href="https://www.uga.edu/" target="_blank" rel="noopener noreferrer">
                         <i>The University of Georgia</i>
                     </a>
                     Graduating this December with a Bachelor's Degree of Computer Science
                     and a Certificate of Applied Data Science.
-                </p>
+                </p> */}
                 <br />
-                <p>
+                <p> {bio[1]} </p>
+                {/* <p>
                     I studied abroad in Japan at
                     <a href="https://www.kyushu-u.ac.jp/" target="_blank" rel="noopener noreferrer">
                         <i>Kyushu University</i>
@@ -35,7 +37,7 @@ function AboutMe() {
                     (2024-2025),
                     and I have gained basic language proficiency in Japanese
                     (N3), as well as a passion for Japanese culture.
-                </p>
+                </p> */}
             </div>
             <div id="contact">
                 <p>
