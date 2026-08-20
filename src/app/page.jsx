@@ -14,8 +14,8 @@ export default function Home() {
       <div className="main-container">
         <Background />
         <Content />
-      </div>
       <Footer />
+      </div>
       <Header />
       <LanguageSwitch />
     </LocalizationProvider>
