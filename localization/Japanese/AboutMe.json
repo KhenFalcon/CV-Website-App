@@ -17,13 +17,13 @@
     "contactIntro": "連絡方法：",
     "contacts": [
         {
-            "ave": "Mobile",
-            "ave-type": "Phone Number",
+            "ave": "モバイル",
+            "ave-type": "電話版五",
             "text": "(+1) (706) 254-6756"
         },
         {
-            "ave": "Personal Email",
-            "ave-type": "Email Address",
+            "ave": "個人のメール",
+            "ave-type": "メールアドレス",
             "text": "chiquen415@gmail.com"
         }
     ]
