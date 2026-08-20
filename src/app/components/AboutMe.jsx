@@ -10,11 +10,8 @@ import "../css/Content.css";
 import headshot from "../assets/headshot.jpg";
 
 function AboutMe() {
-    let name = "";
-    let language = useLocalization().localization;
-
-    if (language == 'English') name = en_local.name;
-    else if (language == 'Japanese') name = jp_local.name;
+    let loc = useLocalization().localization == 'English' ? en_local : jp_local;
+    let [name] = [loc.name];
 
     return (
         <div className="about-me content-section">
