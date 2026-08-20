@@ -4,7 +4,7 @@
         "I am a student from The University of Georgia Graduating this December with a Bachelor's Degree of Computer Science and a Certificate of Applied Data Science.",
         "I studied abroad in Japan at Kyushu University (2024-2025), and I have gained basic language proficiency in Japanese (N3), as well as a passion for Japanese culture."
     ],
-    "inline-links": [
+    "inlineLinks": [
         {
             "text": "The University of Georgia", 
             "link": "https://www.uga.edu/"
@@ -14,6 +14,7 @@
             "link": "https://www.kyushu-u.ac.jp/"
         }
     ],
+    "contactIntro":"Ways to Contact Me:",
     "contacts": [
         {
             "ave": "Mobile",

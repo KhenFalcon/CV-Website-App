@@ -23,9 +23,10 @@
 
 #bio {
     grid-column: 2;
+    grid-row: auto;
 }
 
 #contact {
     grid-column: 1 / span 2;
-    grid-row: 2;
+    grid-row: auto;
 }
