@@ -1,4 +1,8 @@
-import react from "react";
+'use client';
+// localization
+import { useLocalization } from "./LocalizedContext";
+import en_local from "../../../localization/English/AboutMe.json";
+import jp_local from "../../../localization/Japanese/AboutMe.json";
 // css
 import "../css/AboutMe.css";
 import "../css/Content.css";
@@ -6,11 +10,17 @@ import "../css/Content.css";
 import headshot from "../assets/headshot.jpg";
 
 function AboutMe() {
+    let name = "";
+    let language = useLocalization().localization;
+
+    if (language == 'English') name = en_local.name;
+    else if (language == 'Japanese') name = jp_local.name;
+
     return (
         <div className="about-me content-section">
             <img id="headshot" src={headshot?.src || headshot} alt="Headshot" />
             <div id="bio">
-                <h1>Joshua Mark</h1>
+                <h1>{ name }</h1>
                 <p>
                     I am a student from
                     <a href="https://www.uga.edu/" target="_blank" rel="noopener noreferrer">
