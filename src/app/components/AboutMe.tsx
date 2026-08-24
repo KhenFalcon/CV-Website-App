@@ -47,27 +47,37 @@ export default function AboutMe() {
  * @param inlineLinks - Link text and URL pairs from the localized content file.
  * @returns React nodes containing text segments and hyperlink elements.
  */
-function renderBioParagraph(paragraph: string, inlineLinks: readonly { text: string; link: string }[]): ReactNode[] {
+export function renderBioParagraph(paragraph: string, inlineLinks: readonly { text: string; link: string }[]): ReactNode[] {
     const content = []; // the returned ReactNode[]
     let cursor = 0; // the searching cursor for matching substrings
 
-    // Find the first occurrence of each configured label before rendering them.
-    const matches = inlineLinks
-        .map((inlineLink) => ({
-            inlineLink,
-            index: paragraph.indexOf(inlineLink.text),
-        }))
-        .filter(({ inlineLink, index }) => inlineLink.text.length > 0 && index >= 0)
-        // Prefer the earliest occurrence; for ties, prefer the longer label.
-        .sort((first, second) => first.index - second.index || second.inlineLink.text.length - first.inlineLink.text.length);
+    // Process one link occurrence at a time so multiple links can be rendered in one paragraph.
+    while (cursor < paragraph.length) {
 
-    // Render each precomputed match from left to right.
-    for (let i = 0; i < matches.length; i++) {
-        const match = matches[i];
+        // the first occurance of a link substring and its index in paragraph (temp assign: undefined)
+        let match: { inlineLink: { text: string; link: string }; index: number } | undefined;
+        // Scan the links once and find the first occurrence found in paragraph.
+        for (const inlineLink of inlineLinks) {
+            // skip "" texts (safety net)
+            if (inlineLink.text.length === 0) { continue; }
 
-        // Skip matches that overlap text already rendered by an earlier match.
-        if (match.index < cursor) {
-            continue;
+            const index = paragraph.indexOf(inlineLink.text, cursor);
+            if (
+                index >= cursor && // if (index, cursor) makes a valid substring and:
+                (!match || // match is undefined (i.e. this is the first occurance), or...
+                    index < match.index || // this match was already found earlier in the loop, or:
+                    (index === match.index && // this index matches the prior substring's index, but...
+                        inlineLink.text.length > match.inlineLink.text.length)) // this substring is longer (i.e. takes precedence)
+            ) {
+                // then this link substring becomes the next segment to add to content[]
+                match = { inlineLink, index };
+            }
+        }
+
+        // i.e. did not find another text substring to turn into a hyperlink (i.e. push remaining normal text and break the loop)
+        if (!match) {
+            content.push(paragraph.slice(cursor));
+            break;
         }
 
         // Preserve the plain text between the cursor and the next link.
@@ -87,11 +97,6 @@ function renderBioParagraph(paragraph: string, inlineLinks: readonly { text: str
             </a>,
         );
         cursor = match.index + match.inlineLink.text.length;
-    }
-
-    // Preserve any plain text after the final link.
-    if (cursor < paragraph.length) {
-        content.push(paragraph.slice(cursor));
     }
 
     return content;
