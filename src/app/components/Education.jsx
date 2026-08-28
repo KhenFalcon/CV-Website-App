@@ -1,6 +1,5 @@
 "use client";
-
-import react from "react";
+// localization
 // css
 import "../css/Education.css";
 import "../css/Content.css";

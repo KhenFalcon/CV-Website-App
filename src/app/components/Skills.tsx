@@ -1,5 +1,4 @@
 'use client';
-import react from "react";
 // localization
 import { useLocalization } from "./LocalizedContext";
 import en_local from "../../../localization/English/Skills.json";
@@ -37,7 +36,7 @@ function Skills() {
                 ))}
             </div>
             <p>
-                <b>My GitHub:</b>
+                <b>{localization === 'English' ? "My Github: " : "僕のGithub: "}</b>
                 <a href="https://github.com/KhenFalcon" target="_blank"
                     rel="noopener noreferrer">
                     https://github.com/KhenFalcon
