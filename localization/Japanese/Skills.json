@@ -4,9 +4,9 @@
         
     ],
     "Social / Personality" : [
-        "Team Player", "Punctual", "Openly Coordinates/Communicates", "Open-minded", "Hard Worker", "Native-Level English", "Basic Japanese"
+        "ほかの人と協力する", "時間を守る", "座標してコミュニケーションを取る", "虚心", "努力家", "英語のネイティブ", "日本語のベーシック"
     ],
     "Applications / Services" : [
-        "Adobe Photoshop", "Postman", "Mircrosoft Azure", "Eclipse", "Visual Studio Code", "Visual Studio", "BlueJay", "IntelliJ", "SQL", "MongoDB", "Github", "Matlab"
+        "Adobe Photoshop", "Postman", "Mircrosoft Azure", "Eclipse IDE", "Visual Studio Code", "Visual Studio", "BlueJay", "IntelliJ", "SQL", "MongoDB", "Github", "Matlab"
     ]
 }
