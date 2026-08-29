@@ -2,29 +2,37 @@
     "Schools" : [
         {
             "Title" : "North Oconee High School",
+            "Logo": "NOHS logo.png",
+            "Link": "https://nohs.oconeeschools.org/",
             "Major / Degree" : "High School Degree",
-            "GPA" : "3.7",
+            "GPA" : "3.7 GPA",
             "Graduation Date" : "Graduated: May 2022",
-            "Description" : "While still attending North Oconee High School, I also dual-enrolled at the University of North Georgia. I accumulated 28 college credit hours prior to graduating Summa Cum Laude, with a focus in CTAE, and a GPA of 3.7. I was also the North Oconee High School Chess Club Secretary."
+            "Description" : "While still attending North Oconee High School, I also dual-enrolled at the University of North Georgia. I accumulated 28 college credit hours prior to graduating Summa Cum Laude, with a focus in CTAE, and a GPA of 3.7. With my academic performance and SAT score of 1280, I qualified for the Zell-Miller Scholarship, that I maintained throughout my entire college career. I was also the North Oconee High School Chess Club Secretary."
         },
         {
             "Title" : "University of North Georgia",
+            "Logo": "UNG logo.png",
+            "Link": "https://www.ung.edu/",
             "Major / Degree" : "Undergraduates in Computer Science",
-            "GPA" : "4.0",
+            "GPA" : "4.0 GPA",
             "Graduation Date" : "Transferred: May 2023",
             "Description" : "Through dual-enrollment, I accumulated 28 college credits prior to graduating high school. After graduation I attended the University of North Georgia for one full year until transferring to the University of Georgia. While at UNG, I was able to maintain a 4.0 GPA."
         },
         {
             "Title" : "University of Georgia",
+            "Logo": "UGA logo.png",
+            "Link": "https://www.uga.edu/",
             "Major / Degree" : "Bachelors of Science in Computer Science",
-            "GPA" : "3.8",
+            "GPA" : "3.8 GPA",
             "Graduation Date" : "December 2026",
             "Description" : "After I transferred to the University of Georgia, I have continued completion of my Bachelor's Degree in Computer Science and I am also working on a Certificate in Applied Data Science. I also joined the student-organized Japanese Conversation (JCC) and Mahjong Clubs. Through UGA, I was also given the opportunity to study abraod at Kyushu University in Japan, in 2024. I am now set to graduate this December with a 3.8 GPA."
         },
         {
             "Title" : "Kyushu University",
+            "Logo": "KYU logo.jpg",
+            "Link": "https://www.kyushu-u.ac.jp/",
             "Major / Degree" : "International Student",
-            "GPA" : "3.7",
+            "GPA" : "3.7 GPA",
             "Graduation Date" : "Completed: August 2025",
             "Description" : "Through a partnership with my home-university, UGA, I was given the opportunity to attend Kyushu University as a foreign exchange student in the Japan in Today's World (JTW) Program. I stayed in Japan for 10 months and continued my study of Japanese langauge and culture. I now approximately have a basic \"every-day level\" understanding of Japanese."
         }
