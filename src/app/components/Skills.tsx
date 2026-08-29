@@ -13,7 +13,7 @@ function Skills() {
 
     return (
         <div className="skills content-section">
-            <h1>Skills and Languages</h1>
+            <h1>{localization == 'English' ? "Skills and Languages" : "スキルと言語"}</h1>
             <hr />
             <div className="skills-grid">
                 <h3>{localization === 'English' ? "Programming / Computer Skills" : "プログラミング・コーディングスキル: "}</h3>
@@ -22,13 +22,13 @@ function Skills() {
                         {skill}
                     </p>
                 ))}
-                <h3>{localization === 'English' ? "Social / Personality Skills" : "社交・僕の性格: "}</h3>
+                <h3>{localization === 'English' ? "Social / Personality Skills" : "社交・僕の性格"}</h3>
                 {loc["Social / Personality"].map((skill) => (
                     <p key={skill}>
                         {skill}
                     </p>
                 ))}
-                <h3>Application / Services</h3>
+                <h3>{localization == 'English' ? "Applications" : "使う事あるアップリ"}</h3>
                 {loc["Applications / Services"].map((skill) => (
                     <p key={skill}>
                         {skill}

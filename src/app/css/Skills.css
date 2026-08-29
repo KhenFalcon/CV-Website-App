@@ -10,6 +10,7 @@
     overflow-x: hidden;
 
     text-align: left;
+    margin-bottom: 25px;
 
     h3, .github-reference {
         grid-column: 1 / span max;
