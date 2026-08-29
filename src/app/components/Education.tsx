@@ -35,7 +35,7 @@ function Education() {
             <hr />
             <div className="education-grid">
                 {loc["Schools"].map((school) => (
-                    <div className="education-item" key={school}>
+                    <div className="education-item" key={school.Key}>
                         <img src={getLogoSrc(school.Logo)} alt="school logo"
                             onClick={() => window.open(school.Link, 
                             '_blank', 'noopener,noreferrer') }/>
