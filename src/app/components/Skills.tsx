@@ -16,13 +16,13 @@ function Skills() {
             <h1>Skills and Languages</h1>
             <hr />
             <div className="skills-grid">
-                <h3>Programming / Computer Skills</h3>
+                <h3>{localization === 'English' ? "Programming / Computer Skills" : "プログラミング・コーディングスキル: "}</h3>
                 {loc["Programming / Computer Skills"].map((skill) => (
                     <p key={skill}>
                         {skill}
                     </p>
                 ))}
-                <h3>Social / Personality Skills</h3>
+                <h3>{localization === 'English' ? "Social / Personality Skills" : "社交・僕の性格: "}</h3>
                 {loc["Social / Personality"].map((skill) => (
                     <p key={skill}>
                         {skill}
@@ -35,7 +35,7 @@ function Skills() {
                     </p>
                 ))}
             </div>
-            <p>
+            <p id="github-reference">
                 <b>{localization === 'English' ? "My Github: " : "僕のGithub: "}</b>
                 <a href="https://github.com/KhenFalcon" target="_blank"
                     rel="noopener noreferrer">
