@@ -1,4 +1,5 @@
 {
+    "": "When adding new schools, make sure to update the logo and name references to match in src/app/components/Education.tsx",
     "Schools" : [
         {
             "Key" : "1",

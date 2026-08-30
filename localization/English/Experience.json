@@ -1,0 +1,28 @@
+{
+    "Experince" : [
+        {
+            "Company": "Revenue Management Services",
+            "Logo": "RMS Logo.png",
+            "Address": "777 South Harbour Island Blvd. Suite 890 Tampa, FL 33602",
+            "Position": "Software Engineer Trainee (Intern)",
+            "Duration": "September 2022 - December 2022",
+            "Description": "I helped develop and maintain software that would procure and store data that would later be used to help inform and provide consultation to client companies. Obviously, I did not participate in the latter process, and I cannot share much due to NDA. However, this internship gave me a lot of early experience in database management, version control, API Management, and more."
+        },
+        {
+            "Company": "Red Lobster",
+            "Logo": "Red Lobster logo.png",
+            "Address": "1956 W Broad St, Athens, GA 30606",
+            "Position": "Host",
+            "Duration": "August 2023 - May 2024",
+            "Description": "I managed reservations and greeted customers as they entered the restaurant. I then walked the guests to tables and notified their respective servers of the guests' arrival. This process required quick discernment and awareness, social skills, as well as skill in managing guests so that servers are given tables fairly while making sure each guest is greeted and satisfied in a quick and ordely manner."
+        },
+        {
+            "Company": "Locos Grill & Pub",
+            "Logo": "Locos logo.jpg",
+            "Address": "2020 Timothy Rd, Athens, GA 30606",
+            "Position": "Host, Online / To-go Server",
+            "Duration": "June 2024 - December 2025",
+            "Description": "Similarly to my job at Red Lobster, I acted as a Host for the majority of my time at Locos. Additionally, I also acted as an Online and To-go Server. This position involved taking and processing guests' orders, finishing assembling said orders after the cooks have finished cooking the different parts, giving the correct and completed orders to their respective guests and completing their transactions. This position also required social and communication skills, as well as quick memory and association of orders and their customers."
+        }
+    ]
+}

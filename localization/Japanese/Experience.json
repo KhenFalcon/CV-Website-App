@@ -1,0 +1,28 @@
+{
+    "Experince" : [
+        {
+            "Company": "Revenue Management Services",
+            "Logo": "RMS Logo.png",
+            "Address": "777 South Harbour Island Blvd. Suite 890 Tampa, FL 33602",
+            "Position": "ソフトウェアエンジニア実習生 (インターン)",
+            "Duration": "9月2022年 - 12月2022年",
+            "Description": "僕はRMSのソフトウェアを作って保ちました。ソフトウェアはデータを集めて溜めて社費に助言としてしました。あたりき、僕はその最後役割を手伝いしませんでした。そして、NDA(秘密保持契約)があるので、まだ明かせないこともいくつかありますが、この仕事を通じてデータベースの管理やバージョン管理やAPI管理やさまざまなことを早い段階から学ばせてもらいました。"
+        },
+        {
+            "Company": "Red Lobster",
+            "Logo": "Red Lobster logo.png",
+            "Address": "1956 W Broad St, Athens, GA 30606",
+            "Position": "ホスト",
+            "Duration": "8月2023年 - 5月2024年",
+            "Description": "僕は予約を管理してお客様を迎えました。お客様をタブルへ歩いてサーバーを知らせました。このポジションは早い洞察と承知や社会技能やそうして、サーバとお客様を喜ばせるために、お客様を早く等しく分かる能力を要しました。"
+        },
+        {
+            "Company": "Locos Grill & Pub",
+            "Logo": "Locos logo.jpg",
+            "Address": "2020 Timothy Rd, Athens, GA 30606",
+            "Position": "ホスト, オンライ・テイクアウトサーバー",
+            "Duration": "June 2024 - December 2025",
+            "Description": "僕はRed Lobsterと同じようにホストとして働きました。さらにオンライン・テクアウトサーバーで働きました。このポジションで注文を受けて食事を組み立ててお客様に正しい注文を上げて、トランザクションを仕上げました。このポジションも社会技能やコミュニケーション能力や早くに覚えて注文とお客様を関連付ける能力を要しました。"
+        }
+    ]
+}
