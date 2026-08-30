@@ -1,19 +1,25 @@
 # CV Website
 - Created by: Joshua Mark (KhenFalcon)
 - Creation Date: June 10, 2026
-- Last Updated: August 23, 2026
-- Current Version: 1.1.X
+- Last Updated: August 30, 2026
+- Current Version: 2.0.0
 
 This web-app is a CV for Joshua Mark. It is made and developed using React and Typescript. Originally, it operated using Vite.js but (due to issues with deployment) was then transferred into a Node.js deployment. This project is made and maintained by me (Joshua Mark), but has used AI-assistance (Github Copilot) on occassion during development.
 
-## Latest Patch Notes (1.1.X)
+No AI was used in the translation process of this project. I translated this with my limited ability and a dictionary (please be nice).
+
+For newest (beta) updates, feel free to check out the **working-branch** commits!
+
+## Latest Patch Notes (2.0.0)
 - Removed the light/dark theme color-dependency (irrelevant with current background)
 - Added English-to-Japanese button for localization/translation
 - Merged background images into a scrolling-collage for better edges
+- Re-organized Skills card into three sections that are re-distributed according to the page's width.
 
 ### Planned Additions
 - Finish full CV details and information.
-- Add a new "Projects" section. 
+- Add additional translation information to first translation button click and footer.
+- Add a new "Projects" section or a portfolio page. 
 
 For newest (beta) updates, feel free to check out the **working-branch** commits!
 
