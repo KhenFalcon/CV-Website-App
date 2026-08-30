@@ -49,8 +49,12 @@ function Education() {
             </div>
             <br />
             <p><i>
-                -- I do not own any of these logos. Credit and Rights are
-                reserved for their respective owners. --
+                {
+                    localization == 'English'
+                        ? "-- I do not own any of these logos. Credit and Rights are reserved for their respective owners. --"
+                        : "-- 僕はこの写真を有しません。各自の持ち主は掛けと所有権の全部を有しています。--"
+                }
+               
             </i></p>
         </div>
     )
