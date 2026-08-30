@@ -1,0 +1,12 @@
+{
+    "Programming / Computer Skills" : [
+        "Java", "C#", ".NET", "Python", "Typescript", "Javascript", "React", "Node.js", "CSS", "HTML", "HTML5", "JSON", "RESTful APIs", "Git" 
+        
+    ],
+    "Social / Personality" : [
+        "Team Player", "Punctual", "Openly Coordinates/Communicates", "Open-minded", "Hard Worker", "Native-Level English", "Basic Japanese"
+    ],
+    "Applications / Services" : [
+        "Adobe Photoshop", "Postman", "Mircrosoft Azure", "Eclipse IDE", "Visual Studio Code", "Visual Studio", "BlueJay", "IntelliJ", "SQL", "MongoDB", "Github", "Matlab"
+    ]
+}

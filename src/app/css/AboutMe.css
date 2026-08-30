@@ -13,7 +13,7 @@
     grid-column: 1;
     
     max-width: 100%;
-    max-height: 300px;
+    max-height: 500px;
     width: auto;
 
     justify-self: center;
@@ -23,9 +23,10 @@
 
 #bio {
     grid-column: 2;
+    grid-row: auto;
 }
 
 #contact {
     grid-column: 1 / span 2;
-    grid-row: 2;
+    grid-row: auto;
 }

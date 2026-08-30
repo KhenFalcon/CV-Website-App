@@ -1,10 +1,12 @@
 .education-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
     
     img {
-        max-width: 100%;
+        max-width: 300px; /*Original width of smallest image: KYU logo*/
         height: auto;
+
+        cursor: pointer;
     }
 }

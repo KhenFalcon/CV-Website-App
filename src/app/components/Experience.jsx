@@ -1,4 +1,8 @@
-import react from "react";
+"use client";
+// localization
+import { useLocalization } from "./LocalizedContext";
+import en_local from "../../../localization/English/Experience.json";
+import jp_local from "../../../localization/Japanese/Experience.json";
 // css
 import "../css/Experience.css";
 import "../css/Content.css";
@@ -7,62 +11,47 @@ import RMS from "../assets/work-logos/RMS logo.png";
 import RedLobster from "../assets/work-logos/Red Lobster logo.png";
 import Locos from "../assets/work-logos/Locos logo.jpg";
 
+// Map logo filenames to imported images
+const logoMap = {
+    "RMS Logo.png": RMS,
+    "Red Lobster logo.png": RedLobster,
+    "Locos logo.jpg": Locos,
+};
+
+const getLogoSrc = (logoPath: string) => {
+    const filename = logoPath.split("/").pop(); // Extract filename from path
+    return logoMap[filename]?.src || logoMap[filename] || logoPath;
+};
+
 function Experience() {
+    const { localization } = useLocalization();
+    const loc = localization === 'English' ? en_local : jp_local;
+
     return (
         <div className="experience content-section">
-            <h1>Experience</h1>
+            <h1>{localization == 'English' ? "Experience" : "職務経歴"}</h1>
             <hr />
-            <div className="experience-content">
-                <img src={RMS?.src || RMS} alt="Revenue Management Services Logo" />
-                <div className="experience-text">
-                    <h2>Revenue Management Services</h2>
-                    <ul>
-                        <li>
-                            777 South Harbour Island Blvd. Suite 890 Tampa, FL
-                            33602
-                        </li>
-                        <li><b>Software Engineer Trainee (Intern)</b></li>
-                        <li>September 2022 - December 2022</li>
-                    </ul>
-                    <p>Developed and maintained software for revenue management systems.</p>
+            {loc["Experince"].map((job) => (
+                <div key={job.Company} className="experience-content">
+                    <img src={getLogoSrc(job.Logo)} alt={`${job.Company} Logo`} />
+                    <div className="experience-text">
+                        <h2>{job.Company}</h2>
+                        <ul>
+                            <li>{job.Address}</li>
+                            <li><b>{job.Position}</b></li>
+                            <li>{job.Duration}</li>
+                        </ul>
+                        <p>{job.Description}</p>
+                    </div>
                 </div>
-            </div>
-            <br />
-            <div className="experience-content">
-                <img src={RedLobster?.src || RedLobster} alt="Red Lobster Logo" />
-                <div className="experience-text">
-                    <h2>Red Lobster</h2>
-                    <ul>
-                        <li>1956 W Broad St, Athens, GA 30606</li>
-                        <li><b>Host</b></li>
-                        <li>August 2023 - May 2024</li>
-                    </ul>
-                    <p>
-                        Greeted customers, managed reservations, and facilitated early
-                        communication with guests and their servers.
-                    </p>
-                </div>
-            </div>
-            <br />
-            <div className="experience-content">
-                <img src={Locos?.src || Locos} alt="Locos Logo" />
-                <div className="experience-text">
-                    <h2>Locos</h2>
-                    <ul>
-                        <li>2020 Timothy Rd, Athens, GA 30606</li>
-                        <li><b>Host</b></li>
-                        <li>June 2024 - December 2025</li>
-                    </ul>
-                    <p>
-                        Greeted customers, managed reservations, and facilitated early
-                        communication with guests and their servers.
-                    </p>
-                </div>
-            </div>
+            ))}
             <br />
             <p><i>
-                -- I do not own any of these logos. Credit and Rights are
-                reserved for their respective owners. --
+                {
+                    localization == 'English'
+                        ? "-- I do not own any of these logos. Credit and Rights are reserved for their respective owners. --"
+                        : "-- 僕はこの写真を有しません。各自の持ち主は掛けと所有権の全部を有しています。--"
+                }
             </i></p>
         </div>
     )

@@ -1,0 +1,44 @@
+{
+    "name":"Joshua Mark",
+    "bio": [
+        "I am a student from The University of Georgia Graduating this December with a Bachelor's Degree of Computer Science and a Certificate of Applied Data Science.",
+        "I graduated North Oconee High School Summa Cum Laude (with a GPA > 3.7) in 2022 and scored a 1280 on the SAT. I also dual-enrolled at The University of North Georgia for 2 years and continued my college-education there until transferring to UGA in 2023. Throughout my entire college career I have maintained a GPA greater than 3.7, including earning a 4.0 at UNG, and I have also maintained my status as a recipient of the merit-based Zell-Miller Scholarship the full 4 years as well.",
+        "In addition to my major, I also studied Japanese and gained the opportunity to study abroad in Japan at Kyushu University (2024-2025). Because of this, I have gained basic language proficiency in Japanese (JLPT N3), as well as a passion for Japanese culture. After graduation, I fully intend to continue studying Japanese in my pusuit to gain fluency.",
+        "I am a hard worker, a slight perfectionist, and I am always dedicated to the task at hand. I enjoy working with and learning from others, and I am always wanting to learn something new. I look forward to hearing back from you, and even if the current postion does not quite work out, please feel free to contact me about another open position you feel I might be a fit for!"
+    ],
+    "inlineLinks": [
+        {
+            "text": "The University of Georgia", 
+            "link": "https://www.uga.edu/"
+        },
+        {
+            "text": "North Oconee High School",
+            "link": "https://nohs.oconeeschools.org/"
+        },
+        {
+            "text": "Zell-Miller Scholarship",
+            "link": "https://www.gafutures.org/hope-state-aid-programs/hope-zell-miller-scholarships/zell-miller-scholarship/"
+        },
+        {
+            "text": "The University of North Georgia",
+            "link": "https://www.ung.edu/"
+        },
+        {
+            "text": "Kyushu University",
+            "link": "https://www.kyushu-u.ac.jp/"
+        }
+    ],
+    "contactIntro":"Ways to Contact Me:",
+    "contacts": [
+        {
+            "ave": "Mobile",
+            "ave-type": "Phone Number",
+            "text": "(+1) (706) 254-6756"
+        },
+        {
+            "ave": "Personal Email",
+            "ave-type": "Email Address",
+            "text": "chiquen415@gmail.com"
+        }
+    ]
+}

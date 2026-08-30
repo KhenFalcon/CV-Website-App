@@ -1,19 +1,19 @@
-import react from "react";
+import Image from "next/image";
 // css
 import "../css/Background.css";
 // images
-import shipImage from "../assets/background-images/ships.jpg";
-import pondImage from "../assets/background-images/pond.jpg";
-import shrineImage from "../assets/background-images/shrine.jpg";
-import castleImage from "../assets/background-images/castle.jpg";
+import background from "../assets/Background Collage.optimized.jpg";
 
 function Background() {
     return (
         <div className="background">
-            <img src={shipImage?.src || shipImage} alt="Background" />
-            <img src={pondImage?.src || pondImage} alt="Background" />
-            <img src={shrineImage?.src || shrineImage} alt="Background" />
-            <img src={castleImage?.src || castleImage} alt="Background" />
+            <Image
+                src={background}
+                alt="Background"
+                sizes="100vw"
+                quality={75}
+                priority
+            />
         </div>
     )
 }

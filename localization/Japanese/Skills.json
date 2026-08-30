@@ -1,0 +1,12 @@
+{
+    "Programming / Computer Skills" : [
+        "Java", "C#", ".NET", "Python", "Typescript", "Javascript", "React", "Node.js", "CSS", "HTML", "HTML5", "JSON", "RESTful APIs", "Git" 
+        
+    ],
+    "Social / Personality" : [
+        "ほかの人と協力する", "時間を守る", "座標してコミュニケーションを取る", "虚心", "努力家", "英語のネイティブ", "日本語のベーシック"
+    ],
+    "Applications / Services" : [
+        "Adobe Photoshop", "Postman", "Mircrosoft Azure", "Eclipse IDE", "Visual Studio Code", "Visual Studio", "BlueJay", "IntelliJ", "SQL", "MongoDB", "Github", "Matlab"
+    ]
+}
