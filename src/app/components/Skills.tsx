@@ -22,7 +22,7 @@ function Skills() {
                         {skill}
                     </p>
                 ))}
-                <h3>{localization === 'English' ? "Social / Personality Skills" : "社交・僕の性格"}</h3>
+                <h3>{localization === 'English' ? "Social Skills / Personality" : "社交・僕の性格"}</h3>
                 {loc["Social / Personality"].map((skill) => (
                     <p key={skill}>
                         {skill}
