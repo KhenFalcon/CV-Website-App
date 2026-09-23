@@ -1,8 +1,7 @@
 {
   "compilerOptions": {
-    "jsx": "react",
-    "baseUrl": "." // depreciated (im ignoring this)
+    "jsx": "preserve"
   },
-  "include": ["src/**/*", "**/*.js", "**/*.jsx"],
+  "include": ["src/**/*"],
   "exclude": ["node_modules"]
 }

@@ -6,11 +6,9 @@
       "dom.iterable",
       "esnext"
     ],
-    "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
     "noEmit": true,
-    "incremental": true,
     "module": "esnext",
     "esModuleInterop": true,
     "moduleResolution": "bundler",
@@ -21,7 +19,9 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "allowJs": true,
+    "incremental": true
   },
   "include": [
     "next-env.d.ts",
