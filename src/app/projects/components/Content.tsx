@@ -11,7 +11,7 @@ function Content() {
     return (
         <div className="content">
             {loc["projects"].map((project, index) => (
-                <div className="content-section">
+                <div className="content-section" id={project.name}>
                     <img alt="project-splash" />
                     <h1>{project.name}</h1>
                     <p>{project.description}</p>
