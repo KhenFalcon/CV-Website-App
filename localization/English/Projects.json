@@ -1,0 +1,19 @@
+{
+    "projects": [
+        {
+            "name": "CV Website (WIP)",
+            "description": "This website that you are seeing now. It is a website I built to showcase my skills and experience. It is built using React, Next.js, and TypeScript. The translations was done myself (without AI) and are stored via .json files, and uses a context provider to pass it throughout the website. The website itself is stored on github and deployed on Vercel.",
+            "github": "https://github.com/KhenFalcon/CV-Website-App"
+        },
+        {
+            "name": "Wi-Fi Status Monitor",
+            "description": "A program that monitors the status of your Wi-Fi connection. It is very straightforward, in that the only functionality it does is to display a toast notification whenever your Wi-Fi connection status changes. It uses Python and I built it as a way to test making fully executable programs.",
+            "github": "https://github.com/KhenFalcon/WiFi-Monitor"
+        },
+        {
+            "name": "Maze Generator (WIP)",
+            "description": "A program that builds a random maze given a set size. It uses Java and JavaFX to create the maze and display it. The maze itself is generated recursively, starting with a random solution paths, then adding random walls around it.",
+            "github": "https://github.com/KhenFalcon/Maze-Generator-Project"
+        }
+    ]
+}

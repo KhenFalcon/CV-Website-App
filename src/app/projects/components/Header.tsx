@@ -1,15 +1,15 @@
 "use client";
 
 import React from "react";
-// import "../css/Header.css";
-// import "../css/vr.css";
+import "../../css/Header.css";
+import "../../css/vr.css";
 
 export default function Header() {
     return (
         <>
             <div className="header">
                 <div className="vr" />
-                <span onClick={() => scrollTo("about-me")}>
+                <span onClick={() => window.location.href = "/"}>
                     Joshua Mark
                 </span>
                 <div className="vr" />

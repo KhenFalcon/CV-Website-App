@@ -26,9 +26,7 @@ export default function Header() {
                 </span>
                 <div className="vr" />
                 
-                <span onClick={() => alert("Sorry for the inconvenience! This section is currently " +
-                    "under development. In the meantime, please ask me directly about my past " +
-                    "projects or look at some of the projects on my Github! (https://github.com/KhenFalcon)")}>
+                <span onClick={() => window.location.href = "projects"}>
                     Projects
                 </span>
                 <div className="vr" />
