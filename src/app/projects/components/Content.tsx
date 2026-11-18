@@ -1,4 +1,7 @@
 import react from "react";
+
+import Gallery from "./Gallery"; 
+// localizations
 import { useLocalization } from "../../components/LocalizedContext";
 import en_local from "../../../../localization/English/Projects.json";
 import jp_local from "../../../../localization/Japanese/Projects.json";
@@ -15,6 +18,8 @@ function Content() {
                     <img alt="project-splash" />
                     <h1>{project.name}</h1>
                     <p>{project.description}</p>
+                    <br />
+                    <Gallery />
                     <br />
                     <p>
                         <b>Repository on GitHub:</b> 
