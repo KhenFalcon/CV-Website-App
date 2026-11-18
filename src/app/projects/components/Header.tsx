@@ -19,14 +19,15 @@ export default function Header() {
             <span onClick={() => window.location.href = "/"}>
                 Joshua Mark
             </span>
-            {loc["projects"].map((project, index) => (
-                <>
-                    <div className="vr" />
-                    <span onClick={() => scrollTo(project.name)}>
-                        {project.name}
-                    </span>
-                </>
-            ))}
+            {loc["projects"].flatMap((project, index) => [
+                <div key={`left-vr-${index}`} className="vr" />,
+                <span
+                    key={project.name}
+                    onClick={() => scrollTo(project.name)}
+                >
+                    {project.name}
+                </span>
+            ])}
             <div className="vr" />
         </div>
     )
