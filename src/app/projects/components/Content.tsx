@@ -8,11 +8,17 @@ import en_local from "../../../../localization/English/Projects.json";
 import jp_local from "../../../../localization/Japanese/Projects.json";
 // css
 import "../../css/Content.css";
+// images
+import cv_1 from "../../assets/project-images/cv-img-1.jpg";
+import cv_2 from "../../assets/project-images/cv-img-2.jpg";
+import cv_3 from "../../assets/project-images/cv-img-3.jpg";
+import cv_4 from "../../assets/project-images/cv-img-4.jpg";
 
-import image from "../../assets/project-images/cv-img-1.jpg";
-
-const images: GalleryItem[] = [
-    {original: image.src}
+const cv_images: GalleryItem[] = [
+    {original: cv_1.src}, 
+    {original: cv_2.src}, 
+    {original: cv_3.src}, 
+    {original: cv_4.src}
 ];
 
 function Content() {
@@ -21,12 +27,12 @@ function Content() {
     return (
         <div className="content">
             {loc["projects"].map((project, index) => (
-                <div className="content-section" id={project.name}>
+                <div className="content-section" id={project.name} key={project.name}>
                     <img alt="project-splash" />
                     <h1>{project.name}</h1>
                     <p>{project.description}</p>
                     <br />
-                    <Gallery images={getImages(project)} />
+                    <Gallery images={cv_images} />
                     <br />
                     <p>
                         <b>Repository on GitHub:</b> 
@@ -39,23 +45,6 @@ function Content() {
             ))}
         </div>
     )
-}
-
-function getImages(project) {
-    let images: HTMLImageElement[] = [];
-    const pathToAssets = "../../"
-    for (let i = 0; i < project.images.length; i++) {
-        let img = new Image();
-        img.src = pathToAssets + project.images[i]
-        images[i] = img;
-    }
-
-    let galleryItems: GalleryItem[] = [];
-    for (let i = 0; i < images.length; i++) {
-        galleryItems[i] = { original: images[i].src };
-    }
-
-    return galleryItems;
 }
 
 export default Content
