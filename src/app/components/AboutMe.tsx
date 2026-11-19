@@ -8,7 +8,7 @@ import jp_local from "../../../localization/Japanese/AboutMe.json";
 import "../css/AboutMe.css";
 import "../css/Content.css";
 // images
-import headshot from "../../../assets/headshot.jpg";
+import headshot from "../assets/headshot.jpg";
 
 export default function AboutMe() {
     const { localization } = useLocalization();

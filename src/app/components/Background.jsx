@@ -2,7 +2,7 @@ import Image from "next/image";
 // css
 import "../css/Background.css";
 // images
-import background from "../../../assets/Background Collage.optimized.jpg";
+import background from "../assets/Background Collage.optimized.jpg";
 
 function Background() {
     return (

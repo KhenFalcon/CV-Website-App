@@ -1,12 +1,19 @@
 import react from "react";
 
 import Gallery from "./Gallery"; 
+import { GalleryItem } from "react-image-gallery";
 // localizations
 import { useLocalization } from "../../components/LocalizedContext";
 import en_local from "../../../../localization/English/Projects.json";
 import jp_local from "../../../../localization/Japanese/Projects.json";
 // css
 import "../../css/Content.css";
+
+import image from "../../assets/project-images/cv-img-1.jpg";
+
+const images: GalleryItem[] = [
+    {original: image.src}
+];
 
 function Content() {
     const { localization } = useLocalization();
@@ -19,7 +26,7 @@ function Content() {
                     <h1>{project.name}</h1>
                     <p>{project.description}</p>
                     <br />
-                    <Gallery />
+                    <Gallery images={getImages(project)} />
                     <br />
                     <p>
                         <b>Repository on GitHub:</b> 
@@ -32,6 +39,23 @@ function Content() {
             ))}
         </div>
     )
+}
+
+function getImages(project) {
+    let images: HTMLImageElement[] = [];
+    const pathToAssets = "../../"
+    for (let i = 0; i < project.images.length; i++) {
+        let img = new Image();
+        img.src = pathToAssets + project.images[i]
+        images[i] = img;
+    }
+
+    let galleryItems: GalleryItem[] = [];
+    for (let i = 0; i < images.length; i++) {
+        galleryItems[i] = { original: images[i].src };
+    }
+
+    return galleryItems;
 }
 
 export default Content

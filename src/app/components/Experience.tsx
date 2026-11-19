@@ -7,9 +7,9 @@ import jp_local from "../../../localization/Japanese/Experience.json";
 import "../css/Experience.css";
 import "../css/Content.css";
 // images
-import RMS from "../../../assets/work-logos/RMS logo.png";
-import RedLobster from "../../../assets/work-logos/Red Lobster logo.png";
-import Locos from "../../../assets/work-logos/Locos logo.jpg";
+import RMS from "../assets/work-logos/RMS logo.png";
+import RedLobster from "../assets/work-logos/Red Lobster logo.png";
+import Locos from "../assets/work-logos/Locos logo.jpg";
 
 // Map logo filenames to imported images
 const logoMap = {

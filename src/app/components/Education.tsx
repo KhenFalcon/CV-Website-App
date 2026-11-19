@@ -7,10 +7,10 @@ import jp_local from "../../../localization/Japanese/Education.json";
 import "../css/Education.css";
 import "../css/Content.css";
 // images
-import NOHS from "../../../assets/school-logos/NOHS logo.png";
-import UNG from "../../../assets/school-logos/UNG logo.png";
-import UGA from "../../../assets/school-logos/UGA logo.png";
-import KYU from "../../../assets/school-logos/KYU logo.jpg";
+import NOHS from "../assets/school-logos/NOHS logo.png";
+import UNG from "../assets/school-logos/UNG logo.png";
+import UGA from "../assets/school-logos/UGA logo.png";
+import KYU from "../assets/school-logos/KYU logo.jpg";
 
 // Map logo filenames to imported images
 const logoMap = {
